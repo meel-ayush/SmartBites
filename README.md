@@ -23,17 +23,23 @@ You don't need Android Studio to try SmartBite! You can run the app directly in 
 
 ## 📸 Screenshots
 
-<div align="center">
-  <img src="screenshots/screen_welcome.gif" alt="Welcome Screen Animation" width="250"/>
-  <img src="screenshots/screen_home.png" alt="Home Screen" width="250"/>
-  <img src="screenshots/screen_filter.png" alt="Filter Sheet" width="250"/>
-</div>
+<p align="center">
+  <b>Welcome</b>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<b>Home Screen</b>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<b>Filter Sheet</b><br/>
+  <img src="screenshots/screen_welcome.gif" height="420" />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="screenshots/screen_home.png" height="420" />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="screenshots/screen_filter.png" height="420" />
+</p>
 <br/>
-<div align="center">
-  <img src="screenshots/screen_search.png" alt="Search Screen" width="250"/>
-  <img src="screenshots/screen_comparison.png" alt="Comparison Screen" width="250"/>
-  <img src="screenshots/screen_profile.png" alt="Profile Screen" width="250"/>
-</div>
+<p align="center">
+  <b>Search Catalog</b>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<b>Comparison</b>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<b>User Profile</b><br/>
+  <img src="screenshots/screen_search.png" height="420" />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="screenshots/screen_comparison.png" height="420" />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="screenshots/screen_profile.png" height="420" />
+</p>
 
 > 📂 *All high-resolution screenshots are available in the [`screenshots/`](screenshots/) directory.*
 
@@ -137,8 +143,16 @@ smartbites/
 │       │       ├── screens/                   # Compose UI layers
 │       │       ├── components/                # Reusable Compose Widgets
 │       │       └── theme/                     # Material 3 typography & colours
-│       └── res/
-└── gradle/
+│       └── res/                               # 🖼️ All app images, icons, and strings
+│           ├── drawable/                      # 40+ dish images and app logo
+│           ├── mipmap/                        # App launcher icons for different screen sizes
+│           └── values/                        # XML configurations
+│               ├── strings.xml                # Hardcoded strings and app name
+│               └── themes.xml                 # Material 3 theme configurations
+├── gradle/                                    # ⚙️ Gradle configurations
+│   └── libs.versions.toml                     # Modern Gradle Version Catalog for dependencies
+├── build.gradle.kts                           # Root-level build configuration
+└── settings.gradle.kts                        # Module and repository settings
 ```
 
 ### 🔧 Tech Stack
