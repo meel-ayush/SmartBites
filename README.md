@@ -108,8 +108,8 @@ SmartBite is built using the **MVVM (Model-View-ViewModel)** architectural patte
 
 ```text
 smartbites/
-├── README.md                          # The comprehensive documentation file
-├── LICENSE                            # The MIT License open-source rights
+├── README.md                          # This File
+├── LICENSE                            # CC BY-NC 4.0 open-source rights
 ├── screenshots/                       # High-res UI captures and GIFs
 │   ├── screen_welcome.gif
 │   ├── screen_home.png
